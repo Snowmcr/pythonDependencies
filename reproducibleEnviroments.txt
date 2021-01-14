@@ -1,0 +1,47 @@
+- The problem is how to make sure that someone else is getting the exact 
+  same set of depedencies you used on a program you wrote.
+- How to relibly specify all hte dependencies a Python program needs?
+- The program can be ran on:
+    - Local dev environment
+    - Automated tests (CI)
+    - Deployment targets
+- For this, you can use a requirements file
+---
+Introduction to Requirements files
+- returements.txt (or requirements.pip)
+    - := a list of "pip install" arguments placed in a text file
+- Example:
+    - # This is a comment
+    - requests==2.13.0
+    - schedule==0.4.2
+---
+Capturing dependencies
+- with "pip freeze", not like "pip list", there's just third party packages to show.
+- "pip freeze" gives what the Requirements txt file needs
+- You can create the reuiqrements.txt with:
+    - "pip freeze < requirements.txt"
+    - With this it's gonna create the file with all of it.
+--- 
+Restoring captured dependencies from a requirements.txt
+- to reinstall the things from the reuirements.txt
+    - "pip install -r reuirements.txt"
+---
+Separating development and production dependencies
+- In development and continuous integration environments you could need things
+  as testing frameworks, debuggers, etx.
+. For production you wouldn't need those.
+- For this you would create two requirements.txt files. One for developers and 
+  the other for production:
+    - requirements-dev.txt
+        - -r requirements.txt
+        - etx.
+    - requirements.txt
+---
+Best practices
+- Use exact version (rquests==2.13.0) most of the time
+- Inclue secondary dependencies
+- reuiqrements can be name also: requirements.pip or reuiqrements.lock
+- typically place in the root folder of the project
+- Nice to order dependencies of direct (the things installed manually)
+  and secondary dependencies installed while installing the others.
+

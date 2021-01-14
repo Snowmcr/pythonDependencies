@@ -1,0 +1,51 @@
+- One of the best things about python are the amount and quality of the 
+  packages out there.
+---
+Where are the good packages
+- one good page for looking at least in the standart library with a summary is:
+    - https://docs.python.org/3/py-modindex.html
+---
+Finding Popular Packages on Curated Lists
+- awesome-python.com
+- python.libhunt.com
+- python-guide.org
+- wiki.python.org
+- pymotw.com
+--- 
+Selectin quality packages
+- Find a pool of candidate packages
+    - Refine the list by exclusion
+- 1: Find candidate packages
+    - Browse through curated Lists
+    - Google search for 2-5 relevant keywords
+    - Search stack overflow
+    - Community forums like reddit or hacker news
+    - Twitter
+    - PyPI directly
+    - Ask on Stack Overflow
+- 2: Check package popularity
+    - python.libhunt.com popularity indicator
+    - Google/Reddit/Stack Overflow recommendations
+    - GitHub "stars"
+- 3: Check project homepage
+    - Is it helpful?
+    - Is it well-maintained?
+    - How "successful" does this project look?
+- 4: check project README
+    - Doest it cover what the project does and how to install it?
+    - What license is the project under?
+        - ChooseALicense.com for looking information about that license
+    - Who is the author?
+- 5: Is the project actively maintained?
+    - Skim the changelog/update history
+    - Is there activity on the bug tracker?
+    - When was the last commit to the project?
+- 6: Spot-check the source code
+    - Does it follow best-practices like having a consistent formatting style, code comments, etc?
+    - Are there (automated) tests?
+    - How experience were the developers who wrote it?
+    - Would i feel comfortable making small changes if I had to?
+- 7: Try out a few candidates
+    - Take the list of candidates and try them out in an interpreter session (with a venv)
+    - Does the package install and import cleanly?
+    - Do you enjoy working with the package?

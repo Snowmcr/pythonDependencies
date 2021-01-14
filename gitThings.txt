@@ -1,0 +1,23 @@
+
+- For git at first there are the things when you create a repository
+
+# For new repository on command line
+echo "# pythonDependencies" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Snowmcr/pythonDependencies.git
+git push -u origin main
+                
+# For pushing an existing repository from the command line
+git remote add origin git@github.com:Snowmcr/pythonDependencies.git
+git branch -M main
+git push -u origin main
+
+---
+commands
+- "git status" for looking at the ones that are gonna be uploaded
+- "git add <thing>" or "git add ." for uplogading thing to stance or everything with dot.
+- "git commit -m "comment"" for commenting "comment" when uploading something after add.
+- "git push" for pushing it to the actual branch.

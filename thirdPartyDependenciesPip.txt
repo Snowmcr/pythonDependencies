@@ -1,0 +1,45 @@
+The things that some program need in order to work are called dependencies
+
+- Package: 
+    - A bundle of software to be installed into a Python enviroment
+      Typically this are libraries and frameworks
+
+- pip - Python package Manager
+    - Command line tool
+    - pip3 --version: Check pip versioin
+    - pip3 --version: Help for how to use pip
+
+----
+
+pip should be installed on 2.7.9+
+
+---
+
+Python Package Repositories
+- The biggest package repositorie for python is PyPI (or cheese shop)
+- Everytime someone upload a package on PyPI you can install it with pip
+
+- For installing a package, use pip install [name]
+- pip show [name] for more information about the package
+
+- If you need another verion, you can use
+    - pip install requests == 2.1.3
+    - pip install requests >=2, <3
+    - pip install requests ~= 2.1.3
+        - any 2.1.X version >= 2.1.3
+
+- pip install git+https://github.com/user/repo.git@branch
+
+---
+
+- pip list --outdate 
+    - For looking at outdated packages
+- pip3 install --upgrade requests
+    - For upgrading to the latest version of requests for example
+
+- pip3 uninstall [name]
+    - For uninstalling a package
+    - It doesn't remove secondary dependencies
+    - Things like this is why having a venv is so useful
+
+    

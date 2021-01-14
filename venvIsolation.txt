@@ -1,0 +1,20 @@
+- The problem with pip installing in a single shared enviroment, you could
+  not use another versions of the same packages. 
+- That's why is important to have a venv for the project in general
+- It could conflict too with the interpreter. a Project would need python 2
+  and another one would need python 3
+- venv's are like little sandboxes for each project
+
+---
+
+- python -m venv venv
+- venv\scripts\activate
+    - These two commands to create a venve and the second to activate it
+    - To get out of it, use command deactivate
+
+---
+Destroy venv
+- Just delete the venv folder created 
+---
+Workflow
+- How to create an alias for opening and deactivating venv's
